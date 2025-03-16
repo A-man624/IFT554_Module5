@@ -7,7 +7,7 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => {
-  // Added "Change1"
+  // Added "Change1 text"
   res.send("Alexander Martinez IFT554 Module5 Change1");
 });
 
