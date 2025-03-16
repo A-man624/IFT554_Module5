@@ -3,8 +3,11 @@
 // Date: 03/15/25
 
 const express = require("express");
+const loggerMiddleware = require("./loggerMiddleware");
 
 const app = express();
+
+app.use(loggerMiddleware);
 
 app.get("/", (req, res) => {
   // Added "Change1 text"
